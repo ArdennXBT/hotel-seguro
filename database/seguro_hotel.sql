@@ -4,12 +4,6 @@
 -- Version : 1.0
 -- ════════════════════════════════════════════════════════
 
-CREATE DATABASE IF NOT EXISTS seguro_hotel
-  CHARACTER SET utf8mb4
-  COLLATE utf8mb4_unicode_ci;
-
-USE seguro_hotel;
-
 -- ────────────────────────────────────────────────────────
 -- TABLE : users
 -- Clients + admins (différenciés par le champ `role`)

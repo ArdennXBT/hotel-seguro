@@ -732,7 +732,7 @@ include(__DIR__ . '/../layouts/header.php');
 
 <!-- Fil d'Ariane -->
 <div class="breadcrumb-bar">
-  <a href="/acathon/index.php">Accueil</a>
+  <a href="/index.php">Accueil</a>
   <span class="sep">◆</span>
   <span class="current">Chambres &amp; Suites</span>
 </div>
@@ -804,7 +804,7 @@ $TYPES = ['standard'=>'Standard','superieure'=>'Supérieure','suite'=>'Suite','v
       <div style="width:100%;height:100%;background:linear-gradient(135deg,#1a3a2a,#2d5c40);display:flex;align-items:center;justify-content:center;font-size:5rem;color:rgba(201,168,76,.3);">🏨</div>
       <?php endif; ?>
       <div class="chambre-overlay">
-        <a href="/acathon/pages/reservation-system.php" class="overlay-cta">Réserver cette chambre →</a>
+        <a href="/pages/reservation-system.php" class="overlay-cta">Réserver cette chambre →</a>
       </div>
       <span class="chambre-badge"><?= $TYPES[$featured['type']]??ucfirst($featured['type']) ?></span>
     </div>
@@ -826,7 +826,7 @@ $TYPES = ['standard'=>'Standard','superieure'=>'Supérieure','suite'=>'Suite','v
         <div class="chambre-detail">
           <span><?= $featured['capacite_max'] ?></span> personnes &nbsp;·&nbsp; <?= $featured['superficie_m2'] ?> m² &nbsp;·&nbsp; Étage <span><?= $featured['etage'] ?></span>
         </div>
-        <a href="/acathon/pages/reservation-system.php" class="btn-chambre">Réserver</a>
+        <a href="/pages/reservation-system.php" class="btn-chambre">Réserver</a>
       </div>
     </div>
   </div>
@@ -847,7 +847,7 @@ $TYPES = ['standard'=>'Standard','superieure'=>'Supérieure','suite'=>'Suite','v
           <div style="width:100%;height:100%;background:linear-gradient(135deg,#e8f0ea,#d4e4d8);display:flex;align-items:center;justify-content:center;font-size:3rem;color:rgba(26,58,42,.2);">🛏️</div>
           <?php endif; ?>
           <div class="chambre-overlay">
-            <a href="/acathon/pages/reservation-system.php" class="overlay-cta">Réserver →</a>
+            <a href="/pages/reservation-system.php" class="overlay-cta">Réserver →</a>
           </div>
           <span class="chambre-badge"><?= $TYPES[$ch['type']]??ucfirst($ch['type']) ?></span>
           <div class="chambre-price-tag">
@@ -869,7 +869,7 @@ $TYPES = ['standard'=>'Standard','superieure'=>'Supérieure','suite'=>'Suite','v
             <div class="chambre-detail">
               <span><?= $ch['capacite_max'] ?></span> pers. · <span><?= $ch['superficie_m2'] ?> m²</span>
             </div>
-            <a href="/acathon/pages/reservation-system.php" class="btn-chambre">Réserver</a>
+            <a href="/pages/reservation-system.php" class="btn-chambre">Réserver</a>
           </div>
         </div>
       </div>
@@ -921,8 +921,8 @@ $TYPES = ['standard'=>'Standard','superieure'=>'Supérieure','suite'=>'Suite','v
   </h2>
   <p>Disponibilités en temps réel · Meilleur tarif garanti</p>
   <div class="cta-group">
-    <a href="/acathon/pages/reservation-system.php" class="btn-reserve-main">Vérifier les disponibilités</a>
-    <a href="/acathon/pages/contact.php" class="btn-reserve-outline">Nous contacter</a>
+    <a href="/pages/reservation-system.php" class="btn-reserve-main">Vérifier les disponibilités</a>
+    <a href="/pages/contact.php" class="btn-reserve-outline">Nous contacter</a>
   </div>
 </section>
 

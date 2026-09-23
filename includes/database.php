@@ -6,10 +6,10 @@
  */
 
 class Database {
-    private $host = 'localhost';
-    private $db_name = 'seguro_hotel';
-    private $username = 'root';
-    private $password = '';
+   private $host = 'sql303.infinityfree.com';
+private $db_name = 'if0_42989258_seguro_hotel';
+private $username = 'if0_42989258';
+private $password = 'GZNJkc1Ua5';
     private $charset = 'utf8mb4';
     
     public $conn;

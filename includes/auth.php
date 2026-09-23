@@ -188,7 +188,7 @@ function getUserConnecte(): ?array {
 }
 
 // Protéger une page — redirige si non connecté
-function requireLogin(string $redirect = '/acathon/pages/mon-compte.php'): void {
+function requireLogin(string $redirect = '/pages/mon-compte.php'): void {
     if (!estConnecte()) {
         header('Location: ' . BASE_URL . '/pages/connexion.php?redirect=' . urlencode($redirect));
         exit;

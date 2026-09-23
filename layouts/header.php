@@ -635,23 +635,23 @@
 
   <!-- MENU MOBILE -->
   <div class="mobile-menu" id="mobileMenu">
-    <a href="/acathon/pages/chambres.php"    onclick="closeMenu()">Chambres</a>
-    <a href="/acathon/pages/services.php"    onclick="closeMenu()">Services</a>
-    <a href="/acathon/pages/about.php"       onclick="closeMenu()">À Propos</a>
-    <a href="/acathon/pages/contact.php"     onclick="closeMenu()">Contact</a>
+    <a href="/pages/chambres.php"    onclick="closeMenu()">Chambres</a>
+    <a href="/pages/services.php"    onclick="closeMenu()">Services</a>
+    <a href="/pages/about.php"       onclick="closeMenu()">À Propos</a>
+    <a href="/pages/contact.php"     onclick="closeMenu()">Contact</a>
     <?php if (!empty($_SESSION['user_id'])): ?>
-    <a href="/acathon/pages/mon-compte.php" onclick="closeMenu()" style="color:var(--or);">Mon Compte</a>
-    <a href="/acathon/pages/deconnexion.php" onclick="closeMenu()" style="color:var(--or);">Déconnexion</a>
+    <a href="/pages/mon-compte.php" onclick="closeMenu()" style="color:var(--or);">Mon Compte</a>
+    <a href="/pages/deconnexion.php" onclick="closeMenu()" style="color:var(--or);">Déconnexion</a>
     <?php else: ?>
-    <a href="/acathon/pages/connexion-client.php" onclick="closeMenu()" style="color:var(--or);">Connexion</a>
+    <a href="/pages/connexion-client.php" onclick="closeMenu()" style="color:var(--or);">Connexion</a>
     <?php endif; ?>
-    <a href="/acathon/pages/reservation-system.php" onclick="closeMenu()" style="color:var(--or);font-style:italic;">Réserver</a>
+    <a href="/pages/reservation-system.php" onclick="closeMenu()" style="color:var(--or);font-style:italic;">Réserver</a>
   </div>
 
   <!-- HEADER -->
   <header id="header">
 
-    <a href="/acathon/index.php" class="logo">
+    <a href="/index.php" class="logo">
       <div class="logo-ornament">
         <span class="logo-line"></span>
         <span class="logo-diamond"></span>
@@ -662,17 +662,17 @@
     </a>
 
     <nav>
-      <a href="/acathon/pages/chambres.php">Chambres</a>
-      <a href="/acathon/pages/services.php">Services</a>
-      <a href="/acathon/pages/about.php">À Propos</a>
-      <a href="/acathon/pages/contact.php">Contact</a>
+      <a href="/pages/chambres.php">Chambres</a>
+      <a href="/pages/services.php">Services</a>
+      <a href="/pages/about.php">À Propos</a>
+      <a href="/pages/contact.php">Contact</a>
       <?php if (!empty($_SESSION['user_id'])): ?>
-      <a href="/acathon/pages/mon-compte.php"   class="btn-reserver" >Mon Compte</a>
-      <a href="/acathon/pages/deconnexion.php"  class="btn-reserver" >Déconnexion</a>
+      <a href="/pages/mon-compte.php"   class="btn-reserver" >Mon Compte</a>
+      <a href="/pages/deconnexion.php"  class="btn-reserver" >Déconnexion</a>
       <?php else: ?>
-      <a href="/acathon/pages/connexion-client.php" class="btn-reserver" >Connexion</a>
+      <a href="/pages/connexion-client.php" class="btn-reserver" >Connexion</a>
       <?php endif; ?>
-      <a href="/acathon/pages/reservation-system.php" class="btn-reserver">Réserver</a>
+      <a href="/pages/reservation-system.php" class="btn-reserver">Réserver</a>
     </nav>
 
     <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Menu">

@@ -1301,8 +1301,8 @@
       expérience mémorable. SEGURO — votre refuge d'excellence à Agbodrafo, Togo.
     </p>
     <div class="about-cta-btns">
-      <a href="/acathon/pages/reservation.php" class="btn-cta-or">Réserver maintenant</a>
-      <a href="/acathon/pages/contact.php" class="btn-cta-ghost">Nous contacter</a>
+      <a href="/pages/reservation.php" class="btn-cta-or">Réserver maintenant</a>
+      <a href="/pages/contact.php" class="btn-cta-ghost">Nous contacter</a>
     </div>
   </div>
 </section>

@@ -24,5 +24,5 @@ if (ini_get('session.use_cookies')) {
 session_destroy();
 
 // Rediriger vers l'accueil
-header('Location: /acathon/index.php');
+header('Location: /index.php');
 exit;

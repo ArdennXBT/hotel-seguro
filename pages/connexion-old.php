@@ -14,7 +14,7 @@ if (estConnecte()) {
 
 $erreur  = '';
 $succes  = '';
-$redirect = sanitize($_GET['redirect'] ?? '/acathon/pages/mon-compte.php');
+$redirect = sanitize($_GET['redirect'] ?? '/pages/mon-compte.php');
 
 // Traitement du formulaire
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -327,7 +327,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <div class="form-footer">
       <p>
         Vous avez perdu votre code ?<br>
-        <a href="/acathon/pages/contact.php">Contactez notre équipe</a> —
+        <a href="/pages/contact.php">Contactez notre équipe</a> —
         nous vous le renverrons immédiatement.
       </p>
     </div>

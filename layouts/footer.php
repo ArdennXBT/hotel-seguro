@@ -22,10 +22,10 @@
           <div class="footer-nav-col">
             <h6>Navigation</h6>
             <ul>
-              <li><a href="/acathon/index.php">Accueil</a></li>
-              <li><a href="/acathon/pages/chambres.php">Chambres &amp; Suites</a></li>
-              <li><a href="/acathon/pages/services.php">Services</a></li>
-              <li><a href="/acathon/pages/reservation.php">Réservation</a></li>
+              <li><a href="/index.php">Accueil</a></li>
+              <li><a href="/pages/chambres.php">Chambres &amp; Suites</a></li>
+              <li><a href="/pages/services.php">Services</a></li>
+              <li><a href="/pages/reservation.php">Réservation</a></li>
             </ul>
           </div>
         </div>
@@ -35,10 +35,10 @@
           <div class="footer-nav-col">
             <h6>L'Hôtel SEGURO</h6>
             <ul>
-              <li><a href="/acathon/pages/about.php">Notre Histoire</a></li>
-              <li><a href="/acathon/pages/about.php#vision">Notre Vision</a></li>
-              <li><a href="/acathon/pages/about.php#vision">La Promesse SEGURO</a></li>
-              <li><a href="/acathon/pages/contact.php">Presse &amp; Partenariats</a></li>
+              <li><a href="/pages/about.php">Notre Histoire</a></li>
+              <li><a href="/pages/about.php#vision">Notre Vision</a></li>
+              <li><a href="/pages/about.php#vision">La Promesse SEGURO</a></li>
+              <li><a href="/pages/contact.php">Presse &amp; Partenariats</a></li>
             </ul>
           </div>
         </div>
@@ -88,9 +88,9 @@
     <div class="footer-bottom">
       <p>&copy; 2025 Hôtel SEGURO · Agbodrafo, Togo · Tous droits réservés</p>
       <div class="footer-bottom-links">
-        <a href="/acathon/pages/contact.php">Politique de confidentialité</a>
-        <a href="/acathon/pages/contact.php">Mentions légales</a>
-        <a href="/acathon/pages/contact.php">CGV</a>
+        <a href="/pages/contact.php">Politique de confidentialité</a>
+        <a href="/pages/contact.php">Mentions légales</a>
+        <a href="/pages/contact.php">CGV</a>
       </div>
     </div>
   </footer>

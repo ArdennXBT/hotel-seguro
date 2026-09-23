@@ -5,7 +5,7 @@
 session_start();
 
 if (!isset($_SESSION['user_id'])) {
-    header('Location: /acathon/pages/connexion.php');
+    header('Location: /pages/connexion.php');
     exit;
 }
 
@@ -425,7 +425,7 @@ include(__DIR__ . '/../layouts/header.php');
     </div>
 
     <!-- BOUTON DÉCONNEXION -->
-    <!-- <a href="/acathon/pages/deconnexion.php" class="btn-deconnexion">
+    <!-- <a href="/pages/deconnexion.php" class="btn-deconnexion">
       <span class="btn-deconnexion-icon">⎋</span>
       Se déconnecter
     </a> -->
@@ -448,7 +448,7 @@ include(__DIR__ . '/../layouts/header.php');
         <div class="empty-state-icon">📅</div>
         <div class="empty-state-title">Aucune réservation</div>
         <p>Vous n'avez pas encore effectué de réservation à l'Hôtel SEGURO.</p>
-        <a href="/acathon/pages/reservation.php" class="btn-action btn-modifier"
+        <a href="/pages/reservation.php" class="btn-action btn-modifier"
            style="padding:12px 32px;">
           Faire une réservation
         </a>

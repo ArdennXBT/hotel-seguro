@@ -362,7 +362,7 @@
 
 <!-- Fil d'Ariane -->
 <div class="breadcrumb-bar">
-  <a href="/acathon/index.php">Accueil</a>
+  <a href="/index.php">Accueil</a>
   <span class="sep">◆</span>
   <span class="current">Contact &amp; Partenariats</span>
 </div>

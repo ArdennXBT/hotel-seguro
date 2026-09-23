@@ -885,9 +885,9 @@
 
 <!-- Fil d'Ariane -->
 <div class="breadcrumb-bar">
-  <a href="/acathon/index.php">Accueil</a>
+  <a href="/index.php">Accueil</a>
   <span class="sep">◆</span>
-  <a href="/acathon/pages/chambres.php">Chambres</a>
+  <a href="/pages/chambres.php">Chambres</a>
   <span class="sep">◆</span>
   <span class="current">Réservation</span>
 </div>
@@ -1339,8 +1339,8 @@
       Numéro de réservation
     </div>
     <div class="confirm-actions">
-      <a href="/acathon/index.php" class="btn-confirm-action primary">Retour à l'accueil</a>
-      <a href="/acathon/pages/contact.php" class="btn-confirm-action outline">Contacter la conciergerie</a>
+      <a href="/index.php" class="btn-confirm-action primary">Retour à l'accueil</a>
+      <a href="/pages/contact.php" class="btn-confirm-action outline">Contacter la conciergerie</a>
     </div>
   </div>
 
