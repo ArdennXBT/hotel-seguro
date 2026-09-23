@@ -1,0 +1,281 @@
+/* Pour que le fade-in fonctionne */
+section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* ===========================
+   RESET & BASE
+=========================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    color: #333;
+    background-color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ===========================
+   HEADER
+=========================== */
+.site-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 16px 0;
+    transition: background-color 0.3s ease;
+}
+
+.site-header.scrolled {
+    background-color: rgba(0, 0, 0, 0.92);
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo */
+.logo h1 {
+    font-size: 24px;
+    color: #c9a84c;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+/* Navigation */
+.nav-menu ul {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    list-style: none;
+}
+
+.nav-menu ul li a {
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+.nav-menu ul li a:hover {
+    color: #c9a84c;
+}
+
+/* Bouton Réserver */
+.btn-reserver {
+    background-color: #c9a84c;
+    color: #fff !important;
+    padding: 10px 22px;
+    border-radius: 4px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-reserver:hover {
+    background-color: #a8882e;
+    transform: translateY(-2px);
+}
+
+/* ===========================
+   BURGER MENU (mobile)
+=========================== */
+.burger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+}
+
+.burger span {
+    display: block;
+    width: 25px;
+    height: 2px;
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+
+/* Animation burger actif */
+.burger.active span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+.burger.active span:nth-child(2) {
+    opacity: 0;
+}
+.burger.active span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+}
+
+/* ===========================
+   HERO SECTION
+=========================== */
+.hero {
+    height: 100vh;
+    background-image: url('../assets/images/hero.webp');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* parallax */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.45);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+}
+
+.hero-content h2 {
+    font-size: 52px;
+    font-weight: 300;
+    letter-spacing: 6px;
+    margin-bottom: 16px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 32px;
+    color: #e0d5c1;
+}
+
+.hero-content .btn-reserver {
+    font-size: 16px;
+    padding: 14px 36px;
+}
+
+/* ===========================
+   FADE-IN AU SCROLL
+=========================== */
+section {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ===========================
+   CHAMBRES - HOVER ÉLÉGANT
+=========================== */
+.chambres-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+    padding: 60px 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.chambre-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.chambre-card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+    display: block;
+}
+
+.chambre-card:hover img {
+    transform: scale(1.06);
+}
+
+.chambre-card .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0,0,0,0.75));
+    color: #fff;
+    padding: 24px 16px 16px;
+    transform: translateY(10px);
+    transition: transform 0.4s ease;
+}
+
+.chambre-card:hover .overlay {
+    transform: translateY(0);
+}
+
+/* ===========================
+   PLACEHOLDER IMAGES
+=========================== */
+img {
+    background-color: #e8e4dc;
+}
+
+/* ===========================
+   RESPONSIVE MOBILE
+=========================== */
+@media (max-width: 768px) {
+    .burger {
+        display: flex;
+    }
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 64px;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.95);
+        padding: 24px;
+    }
+
+    .nav-menu.open {
+        display: flex;
+    }
+
+    .nav-menu ul {
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-start;
+    }
+
+    .hero-content h2 {
+        font-size: 32px;
+    }
+}
